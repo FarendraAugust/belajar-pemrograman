@@ -7,7 +7,7 @@ int main() {
   float a,
   b,
   hasil;
-  char aritmatika;
+  char operasi;
 
   cout << "Selamat datang di program kalkulator simpel" << endl;
 
@@ -15,20 +15,20 @@ int main() {
   cout << "Masukkan bilangan pertama: ";
   cin >> a;
   cout << "Pilih operasi +, -, *, /: ";
-  cin >> aritmatika;
+  cin >> operasi;
   cout << "Masukkan bilangan kedua: ";
   cin >> b;
 
   cout << "Hasil perhitungan: ";
-  cout << a << aritmatika << b;
+  cout << a << operasi << b;
 
-  if (aritmatika == '+') {
+  if (operasi == '+') {
     hasil = a + b;
-  } else if (aritmatika == '-') {
+  } else if (operasi == '-') {
     hasil = a - b;
-  } else if (aritmatika == '*') {
+  } else if (operasi == '*') {
     hasil = a * b;
-  } else if (aritmatika == '/') {
+  } else if (operasi == '/') {
     hasil = a / b;
   } else {
     cout << "\nOperasi tidak valid" << endl;
